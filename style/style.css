@@ -715,7 +715,6 @@ main {
 
 .feedback {
     width: 100%;
-    height: auto;
     margin-bottom: 0;
     display: flex;
     justify-content: center;
@@ -729,7 +728,6 @@ main {
 
 .feedback-title {
     width: 100%;
-    height: auto;
     padding: 8px;
     text-align: center;
     font-size: 40px;
@@ -741,13 +739,16 @@ main {
 }
 
 .feedback-list {
+    width: 100%;
+    min-height: 300px;
     list-style: none;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 .feedback-guest-single {
-    width: auto;
+    width: 80%;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -757,8 +758,23 @@ main {
     background-color: rgba(0, 0, 0, 0.41);
     color: #fff;
     border-radius: 10px;
+    
+    position: absolute;
+    top: 0;
+    left: 10%;
+    
+    opacity: 0;
+    transform: translateX(-40%);
+    transition: all 0.3s;
 }
 
+
+.feedback-guest-single.active{
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.3s;
+    
+}
 
 .feedback-guest-single h3 {
     font-size: 18px;
@@ -851,7 +867,7 @@ main {
 }
 
 .contact-title h2,
-.contact-form h2 {
+.contact-form h3 {
     padding: 7px;
     font-family: 'Pacifico', cursive;
     font-size: 60px;
@@ -880,7 +896,7 @@ main {
     margin: 0 auto;
 }
 
-.contact-form h2 {
+.contact-form h3 {
     width: 80%;
     font-size: 19px;
     letter-spacing: 1px;
@@ -1218,6 +1234,36 @@ main {
     
 }
 
+/* 560 px */
+
+
+@media (max-width: 570px) {
+    
+    /*   Feedback section styling  */
+    
+    .feedback-list {
+        min-height: 400px;
+    }
+    
+    .line {
+        display: none;
+    }
+    
+    .guest-single-photo {
+        padding: 5px;
+        margin-bottom: 0;
+    }
+    
+    .guest-single-text {
+        width: 100%;
+        padding: 5px;
+    }
+    
+    
+    
+}
+
+
 /* 440 px */
 
 
@@ -1261,22 +1307,6 @@ main {
     
     .activities-title-section h2 {
         font-size: 45px;
-    }
-    
-/*   Feedback section styling  */
-    
-    .line {
-        display: none;
-    }
-    
-    .guest-single-photo {
-        padding: 5px;
-        margin-bottom: 0;
-    }
-    
-    .guest-single-text {
-        width: 100%;
-        padding: 5px;
     }
     
     
