@@ -1,23 +1,29 @@
-var currentSlide = 0;
+const feedBacks = document.querySelectorAll('.feedback-guest-single');
+let currentSlide = 0;
 
 
 function changeFeedback() {
     
-    feedbackSingle[currentSlide].classList.remove('hidden');
+    feedBacks[currentSlide].classList.add('active');
     
-    if (currentSlide == 0) {
-        feedbackSingle[feedbackSingle.length - 1].classList.add('hidden');
+    if (currentSlide === 0) {
+        feedBacks[feedBacks.length - 1].classList.remove('active');
     } else {
-        feedbackSingle[currentSlide-1].classList.add('hidden');
+        feedBacks[currentSlide-1].classList.remove('active');
     }
-    if (currentSlide == feedbackSingle.length - 1) {
+    if (currentSlide === feedBacks.length - 1) {
             currentSlide = 0;
     } else {
             currentSlide++;
     }
-    setTimeout(changeFeedback, 2500);
+    setTimeout(changeFeedback, 3500);
 }
 
 
+
+
 document.addEventListener('DOMContentLoaded', changeFeedback);
+
+
+
 

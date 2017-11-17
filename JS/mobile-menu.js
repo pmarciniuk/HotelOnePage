@@ -11,7 +11,6 @@ document.addEventListener('resize', onResize);
 
 function onResize() {
     if (intViewportWidth > 880) {
-        console.log('dziala');
         mobileMenu.classList.add('hidden');
         invitationSection.style.marginTop = '0';
         iconToggle.innerHTML = '<i class="fa fa-bars" aria-hidden="true"></i>';
