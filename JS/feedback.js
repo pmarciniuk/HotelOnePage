@@ -1,5 +1,18 @@
+const header = document.querySelector('.intro-container');
 const feedBacks = document.querySelectorAll('.feedback-guest-single');
 let currentSlide = 0;
+let isSticky = false;
+
+function onScroll() {
+    
+    if (isSticky) {
+        header.classList.add('sticky');
+    } else {
+        header.classList.remove('sticky');
+    };
+    
+}
+
 
 
 function changeFeedback() {
@@ -21,7 +34,10 @@ function changeFeedback() {
 
 
 
-
+window.addEventListener('scroll', () => {
+    isSticky = window.scrollY > 102 ? true : false;
+});
+window.addEventListener('scroll', onScroll);
 document.addEventListener('DOMContentLoaded', changeFeedback);
 
 
