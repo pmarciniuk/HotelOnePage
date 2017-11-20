@@ -12,13 +12,13 @@ html {
 
 body {
     background-color: #F6F6F6;
-    padding-top: 50px;
+    padding-top: 110px;
 }
 
 
 .intro-container {
     
-    height: 50px;
+    height: 110px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -31,7 +31,16 @@ body {
     border: 0;
     margin: 0;
     padding: 0;
+    
+    transition: height 0.4s;
 }
+
+.intro-container.sticky{
+    height: 50px;
+    box-shadow: 6px 3px 14px rgba(97, 97, 97, 0.2);
+    
+}
+
 
 /*=========================================== 
 
@@ -45,19 +54,19 @@ body {
     height: auto;
     margin-left: 15px;
     box-sizing: border-box;
-    padding: 10px;
 }
 
 .logo a {
     width: 100%;
     height: auto;
-    font-size: 23px;
+    font-size: 30px;
     font-family: 'Pacifico', cursive;
     font-weight: 300;
     text-decoration: none;
     letter-spacing: 2px;
     color: rgba(0, 0, 0, 0.54);
     display: block;
+    padding: 10px;
 }
 
 /*=========================================== 
@@ -98,8 +107,10 @@ body {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 50px;
-    right: 0; 
+    top: 110px;
+    right: 0;
+    transition: all 0.2s ease-in-out;
+
 }
 
 .menu-mobile li {
@@ -109,7 +120,6 @@ body {
     border-bottom: 1px solid #dadada;
     text-align: center;
     flex-basis: 100%;
-    transition: background-color 0.2s ease-in-out;
 }
 
 .menu-mobile li:last-child {
@@ -765,14 +775,14 @@ main {
     
     opacity: 0;
     transform: translateX(-40%);
-    transition: all 0.3s;
+    transition: all 0.5s;
 }
 
 
 .feedback-guest-single.active{
     opacity: 1;
     transform: translateX(0);
-    transition: all 0.3s;
+    transition: all 0.5s;
     
 }
 
@@ -1140,7 +1150,7 @@ main {
 
 /* 880 px */
 
-@media (max-width: 880px) {
+@media (max-width: 894px) {
     
 /*  Menu Section  */
     

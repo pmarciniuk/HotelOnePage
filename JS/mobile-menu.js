@@ -1,8 +1,8 @@
-var hamburger = document.querySelector('#iconToggle');
-var mobileMenu = document.querySelector('#mobile-menu');
-var invitationSection = document.querySelector('.invitation');
-var iconToggle = document.querySelector('#iconToggle');
-var intViewportWidth = window.innerWidth;
+const hamburger = document.querySelector('#iconToggle');
+const mobileMenu = document.querySelector('#mobile-menu');
+const invitationSection = document.querySelector('.invitation');
+const iconToggle = document.querySelector('#iconToggle');
+const intViewportWidth = window.innerWidth;
 
 
 hamburger.addEventListener('click', onHamburgerClick);
