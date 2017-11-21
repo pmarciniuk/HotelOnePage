@@ -272,6 +272,9 @@ body {
     margin-bottom: 9px;
     margin-top: 0;
     padding: 10px;
+    
+    animation-name: fadeInLeft;
+    animation-duration: 1.5s;
 }
 
 .intro-text p {
@@ -280,10 +283,23 @@ body {
     letter-spacing: 1px;
     padding: 9px;
     margin: 0;
+    
+    animation-name: fadeInRight;
+    animation-duration: 1.5s;
 }
 
 .partners figure {
     display: inline-block;
+}
+
+.partners--trip {
+    animation-name: fadeInRight;
+    animation-duration: 1.5s;
+}
+
+.partners--air {
+    animation-name: fadeInLeft;
+    animation-duration: 1.5s;
 }
 
 /*=========================================== 
