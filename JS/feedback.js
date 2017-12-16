@@ -24,6 +24,8 @@ function changeFeedback() {
     } else {
         feedBacks[currentSlide-1].classList.remove('active');
     }
+    
+    
     if (currentSlide === feedBacks.length - 1) {
             currentSlide = 0;
     } else {
