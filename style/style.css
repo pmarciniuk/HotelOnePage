@@ -242,7 +242,7 @@ body {
 .invitation {
     width: 100%;
     height: 500px;
-    background: url(../pictures/intro.JPG) no-repeat;
+    background: url(../pictures/hero.jpg) no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
