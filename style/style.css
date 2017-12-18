@@ -831,17 +831,6 @@ main {
     align-items: center;
     flex-direction: column;
     padding: 20px;
-    position: relative;
-}
-
-.guest-single-photo::after {
-    content: '';
-    position: absolute;
-    top: 23%;
-    right: -35%;
-    width: 2px;
-    height: 50%;
-    background-color: #fff;
 }
 
 .guest-single-photo img {
